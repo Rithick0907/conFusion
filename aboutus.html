@@ -9,10 +9,59 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
   </head>
 
   <body>
     <header class="jumbotron">
+      <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#Navbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html"
+                  ><span class="fa fa-home fa-lg"></span> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#"
+                  ><span class="fa fa-info fa-lg"></span> About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><span class="fa fa-list fa-lg"></span> Menu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.html"
+                  ><span class="fa fa-address-card fa-lg"></span> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <div class="container">
         <div class="row row-header">
           <div class="col-12 col-sm-6">
@@ -27,6 +76,10 @@
         </div>
       </div>
     </header>
+    <ol class="col-12 breadcrumb">
+      <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+      <li class="breadcrumb-item active">About Us</li>
+    </ol>
 
     <div class="container">
       <div class="row">
@@ -59,6 +112,43 @@
 
       <div class="row">
         <div class="col-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#peter">
+                Peter,CEO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#danny">
+                Danny,CFO
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="peter">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum corporis beatae libero, pariatur fugiat eaque, nobis
+              provident natus quidem dolorum harum accusantium mollitia debitis
+              minima ad neque. Sed sequi quo laboriosam aspernatur voluptates
+              nihil quod numquam ipsa rem, molestiae nam quis, harum,
+              consequatur veniam vero. Deleniti ullam, ex modi nam esse sequi!
+            </div>
+            <div class="tab-pane fade" id="danny">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+              quibusdam ea, repellendus aperiam porro sed accusamus quis
+              officiis culpa architecto excepturi dolore numquam eius magnam nam
+              ad laborum corrupti. Excepturi impedit ex blanditiis, alias,
+              inventore maxime, non cum quo natus dolorem tempora voluptatibus.
+              Illo facere eveniet praesentium ullam repellat optio sapiente
+              necessitatibus voluptate, aspernatur rem obcaecati ipsa voluptates
+              labore quasi, est omnis voluptatibus consectetur accusamus magnam
+              non eum fugiat quam! Natus quod exercitationem rem repellendus
+              numquam reiciendis veniam dolor eveniet repellat enim ad ullam
+              tempora reprehenderit accusamus mollitia autem ipsum, quasi
+              blanditiis ut sit maiores saepe non. Officia, in a?
+            </div>
+          </div>
+
           <h2>Corporate Leadership</h2>
           <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
           <p class="d-none d-sm-block">
@@ -124,19 +214,42 @@
               121, Clear Water Bay Road<br />
               Clear Water Bay, Kowloon<br />
               HONG KONG<br />
-              Tel.: +852 1234 5678<br />
-              Fax: +852 8765 4321<br />
-              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
+              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
+              <i class="fa fa-envelope fa-lg"></i>:
+              <a href="mailto:confusion@food.net">confusion@food.net</a>
             </address>
           </div>
           <div class="col-12 col-sm-4 align-self-center">
             <div class="text-center">
-              <a href="http://google.com/+">Google+</a>
-              <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-              <a href="http://www.linkedin.com/in/">LinkedIn</a>
-              <a href="http://twitter.com/">Twitter</a>
-              <a href="http://youtube.com/">YouTube</a>
-              <a href="mailto:">Mail</a>
+              <a
+                class="btn btn-social-icon btn-google"
+                href="http://google.com/+"
+                ><i class="fa fa-google-plus"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-facebook"
+                href="http://www.facebook.com/profile.php?id="
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-linkedin"
+                href="http://www.linkedin.com/in/"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-twitter"
+                href="http://twitter.com/"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-google"
+                href="http://youtube.com/"
+                ><i class="fa fa-youtube"></i
+              ></a>
+              <a class="btn btn-social-icon" href="mailto:"
+                ><i class="fa fa-envelope-o"></i
+              ></a>
             </div>
           </div>
         </div>

@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="node_modules/font-awesome/css/font-awesome.min.css"
@@ -17,6 +16,8 @@
       rel="stylesheet"
       href="node_modules/bootstrap-social/bootstrap-social.css"
     />
+    <link rel="stylesheet" href="css/styles1.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
@@ -56,9 +57,7 @@
             </li>
           </ul>
           <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
-              <span class="fa fa-sign-in"></span> Login
-            </a>
+            <a id="loginLink"> <span class="fa fa-sign-in"></span> Login </a>
           </span>
         </div>
       </div>
@@ -140,8 +139,7 @@
             <a
               role="button"
               class="btn btn-block nav-link btn-warning"
-              data-toggle="modal"
-              data-target="#reserveModal"
+              id="reserveButton1"
               >Reserve Table</a
             >
           </div>
@@ -531,6 +529,14 @@
           $("#carouselButton").children("span").removeClass("fa-play");
           $("#carouselButton").children("span").addClass("fa-pause");
         }
+      });
+
+      $("#reserveButton1").click(function () {
+        $("#reserveModal").modal("show");
+      });
+
+      $("#loginLink").click(function () {
+        $("#loginModal").modal("show");
       });
     </script>
   </body>
